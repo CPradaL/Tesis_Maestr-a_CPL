@@ -1,0 +1,21 @@
+# Geometry Optimization Calculation
+
+! OPT PBEh-3c DKH-def2-SVP def2-TZVP/C RIJDX DKH D3BJ NormalPrint TightSCF
+
+ %basis
+  NewGTO Fe "DKH-def2-TZVP" end
+  NewGTO P "DKH-def2-TZVP(-f)" end
+ end
+
+ ! AnFreq
+
+ %pal nprocs 12
+ end
+
+ %maxcore 5000
+
+ %scf
+  MaxIter 500
+ end
+
+ * xyzfile 0 1 molecula.xyz
